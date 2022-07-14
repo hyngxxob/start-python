@@ -1,3 +1,18 @@
+"""
+
+1. append()
+2. insert(인덱스, 원소)
+3. del
+4. List 합집합
+5. List max(), min()
+6. List sum()
+7. List len()s
+8. List Sliing
+9. List join()
+10. List split()
+11. List sort(), sorted()
+
+"""
 
 # append()
 movie_rank = ["닥터 스트레인지", "스플릿", "럭키"]
@@ -71,3 +86,19 @@ print(interest[0:2])
 # 삼성전자 LG전자 Naver SK하이닉스 미래에셋대우
 interest = ['삼성전자', 'LG전자', 'Naver', 'SK하이닉스', '미래에셋대우']
 print(" ".join(interest))
+# List 요소 줄바꿈 출력
+print("\n".join(interest))
+
+
+string = "삼성전자/LG전자/Naver"
+# ['삼성전자', 'LG전자', 'Naver']
+print(string.split("/"))
+
+
+# 리스트 정렬 - 오름차순 출력
+data = [2, 4, 3, 1, 5, 10, 9]
+data.sort()
+print(data)
+
+data2 = sorted(data)
+print(data2)
