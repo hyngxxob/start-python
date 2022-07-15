@@ -49,3 +49,30 @@ print(ice)
 # 딕셔너리 요소 삭제
 del ice["메로나"]
 print(ice)
+
+
+# 딕셔너리 생성 및 딕셔너리 인덱싱
+inventory = { "메로나" : [300, 20], "비비빅" : [400, 3], "죠스바" : [250, 100]}
+print(inventory)
+print(inventory["메로나"][0], "원")
+print(inventory["메로나"][1], "개")
+
+inventory["월드콘"] = [500, 7]
+print(inventory)
+
+
+# 딕셔너리 keys() 메서드
+icecream = {'탱크보이': 1200, '폴라포': 1200, '빵빠레': 1800, '월드콘': 1500, '메로나': 1000}
+print(icecream.keys())
+
+# 딕셔너리 values() 메서드
+print(icecream.values())
+
+# 딕셔너리 values() 내 int 값을 sum()으로 더함
+print(sum(icecream.values()))
+
+
+# 딕셔너리 update 메서드 : 딕셔너리 추가
+new_product = {'팥빙수' : 2700, '아맛나' : 1000}
+icecream.update(new_product)
+print(icecream)
